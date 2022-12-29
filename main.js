@@ -51,10 +51,10 @@ const loadAudio = () => {
     audio.id = "bg-audio";
     audio.src = "/audio/bg-audio.m4a";
 
-    window.addEventListener("focus", () => {
+    document.body.addEventListener("mouseenter", () => {
         audio.play();
       });
-    window.addEventListener("blur", () => {
+    document.body.addEventListener("mouseleave", () => {
     audio.pause();
     });
 }
