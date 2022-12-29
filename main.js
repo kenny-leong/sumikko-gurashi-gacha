@@ -13,7 +13,6 @@ const createHeaderContent = () => {
     headerContent.style.display = "flex";
     headerContent.style.justifyContent = "flex-end";
     headerContent.style.marginTop = "30px";
-    headerContent.style.marginRight = "80px";
     document.body.append(headerContent);
 
 }

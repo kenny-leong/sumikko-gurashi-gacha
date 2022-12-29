@@ -24,7 +24,7 @@ export const createGemContainer = () => {
 const createNumberDisplay = () => {
     const numberDiv = document.createElement("div");
     numberDiv.className = "number-div";
-    numberDiv.style.marginLeft = "10px";
+    numberDiv.style.marginLeft = "5px";
     numberDiv.style.marginRight = "10px";
 
     const number = document.createElement("p");
@@ -43,8 +43,8 @@ const createGemImg = () => {
     imgContainer.className = "img-container";
 
     const primogem = document.createElement("img");
-    primogem.src = "/images/primogems.jpeg";
-    primogem.style.height = "35px";
+    primogem.src = "/images/primogem.png";
+    primogem.style.height = "25px";
 
     imgContainer.appendChild(primogem);
     return imgContainer;
