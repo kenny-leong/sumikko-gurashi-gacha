@@ -42,6 +42,14 @@ const createWishDisplay = () => {
     wish.style.textShadow = "#FC0 1px 0 10px";
     wish.style.letterSpacing = "2px";
 
+    wish.addEventListener("mouseenter", () => {
+        wish.style.color = "lightpink";
+      });
+
+    wish.addEventListener("mouseleave", () => {
+        wish.style.color = "white";
+    });
+
     wishDiv.appendChild(wish);
     return wishDiv;
 }

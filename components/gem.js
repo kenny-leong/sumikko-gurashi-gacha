@@ -63,6 +63,14 @@ const createBtn = () => {
     plusBtn.style.marginTop = "2px";
     plusBtn.style.height = "33px";
 
+    plusBtn.addEventListener("mouseenter", () => {
+        plusBtn.style.transform = "scale(0.9)";
+      });
+
+    plusBtn.addEventListener("mouseleave", () => {
+    plusBtn.style.transform = "scale(1)";
+    });
+
     btnContainer.appendChild(plusBtn);
     return btnContainer;
 }

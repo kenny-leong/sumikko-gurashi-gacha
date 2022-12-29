@@ -12,6 +12,13 @@ export const createBanner = () => {
     banner.style.height = "400px";
     banner.style.boxShadow = `0 0 10px 5px rgba(255, 204, 0, 0.5)`
 
+    banner.addEventListener("mouseenter", () => {
+        banner.style.transform = "scale(1.01)";
+      });
+    banner.addEventListener("mouseleave", () => {
+        banner.style.transform = "scale(1)";
+    });
+
     bannerContainer.appendChild(banner);
     document.body.appendChild(bannerContainer);
 
