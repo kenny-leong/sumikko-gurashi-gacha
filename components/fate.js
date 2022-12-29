@@ -16,7 +16,7 @@ export const createFateContainer = () => {
 
     fateContainer.append(fateBall, amt);
 
-    const headerContent = document.getElementById("header-content");
+    const headerContent = document.getElementById("right-header-container");
     headerContent.appendChild(fateContainer);
 
 }

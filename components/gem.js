@@ -16,7 +16,7 @@ export const createGemContainer = () => {
 
     gemContainer.append(gemImg, startingGems, plusBtn);
 
-    const headerContent = document.getElementById("header-content");
+    const headerContent = document.getElementById("right-header-container");
     headerContent.appendChild(gemContainer);
 }
 
