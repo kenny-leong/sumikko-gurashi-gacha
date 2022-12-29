@@ -32,7 +32,7 @@ const createNumberDisplay = () => {
     number.id = "number";
     number.style.marginLeft = "3px";
     number.style.marginRight = "5px";
-    number.style.fontFamily = `Ubuntu`
+    number.style.fontFamily = `Genshin`
     number.style.color = "white";
     number.style.fontSize = "20px"
     number.style.fontWeight = "bolder";

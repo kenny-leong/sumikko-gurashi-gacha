@@ -21,8 +21,9 @@ const toggleLoadingScreen = (isVisible) => {
         loadingText.id = "loading-text";
         loadingText.style.fontSize = "50px";
         loadingText.style.textAlign = "center";
-        loadingText.style.marginTop = "50%";
+        loadingText.style.marginTop = "30%"
         loadingText.style.color = "white";
+        loadingText.style.fontFamily = "Genshin";
 
         loadingScreen.appendChild(loadingText);
         document.body.appendChild(loadingScreen);
@@ -36,7 +37,7 @@ const showLoadScreen = () => {
     toggleLoadingScreen(true);
     setTimeout(function() {
         toggleLoadingScreen(false);
-      }, 3000);
+      }, 5000);
 }
 
 
@@ -71,7 +72,7 @@ const createHeader = () => {
 
 window.onload = () => {
     loadAudio();
-    // showLoadScreen();
+    showLoadScreen();
     loadBackground();
     createHeader();
     createLeftHeaderContent();

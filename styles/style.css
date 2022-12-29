@@ -26,3 +26,8 @@
       transform: rotate(360deg);
     }
   }
+
+  @font-face {
+    font-family: 'Genshin';
+    src: url('/fonts/zh-cn.ttf') format('truetype');
+  }

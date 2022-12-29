@@ -36,7 +36,7 @@ const createWishDisplay = () => {
     wish.innerText = "願い事をする (Make a wish)";
     wish.id = "wish-text";
     wish.style.marginLeft = "25px";
-    wish.style.fontFamily = "Lato";
+    wish.style.fontFamily = "Genshin";
     wish.style.color = "white";
     wish.style.fontSize = "30px";
     wish.style.textShadow = "#FC0 1px 0 10px";
