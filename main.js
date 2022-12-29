@@ -6,6 +6,8 @@ import { createBanner } from './components/banner.js'
 const loadBackground = () => {
     document.body.style.background = `url("/images/bg-3.jpeg") no-repeat center center fixed`;
     document.body.style.backgroundSize = `cover`;
+    document.body.style.cursor = "url('/images/cursor.png'), auto";
+
 }
 
 const loadAudio = () => {
@@ -28,15 +30,6 @@ const createHeader = () => {
     header.style.display = "flex";
     header.style.justifyContent = "space-between";
     header.style.alignItems = 'center';
-}
-
-const createFooter = () => {
-    const footer = document.createElement("div");
-    footer.id = "main-footer";
-    document.body.appendChild(footer);
-    footer.style.display = "flex";
-    footer.style.justifyContent = "space-between";
-    footer.style.alignItems = 'center';
 }
 
 
