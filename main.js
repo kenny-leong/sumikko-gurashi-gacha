@@ -1,4 +1,5 @@
-import { createGemContainer } from './gem.js'
+import { createGemContainer } from './components/gem.js'
+import { createFateContainer } from './components/fate.js';
 
 
 const loadBackground = () => {
@@ -21,11 +22,9 @@ const createHeaderContent = () => {
 
 
 
-
-
-
 window.onload = async () => {
     loadBackground();
     createHeaderContent();
+    createFateContainer();
     createGemContainer();
 };
