@@ -16,7 +16,6 @@ const createHeader = () => {
     header.style.display = "flex";
     header.style.justifyContent = "space-between";
     header.style.alignItems = 'center';
-
 }
 
 

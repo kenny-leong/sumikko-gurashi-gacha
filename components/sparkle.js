@@ -5,6 +5,7 @@ export const createSparkleContainer = () => {
     sparkleContainer.style.display = "inline-flex";
     sparkleContainer.style.alignItems = "center";
     sparkleContainer.style.marginLeft = "30px";
+    sparkleContainer.style.marginTop = "20px";
 
     const sparkleImg = createSparkleImg();
     const wishText = createWishDisplay();
@@ -33,7 +34,7 @@ const createWishDisplay = () => {
     wishDiv.className = "wish-div";
 
     const wish = document.createElement("p");
-    wish.innerText = "願い事をする";
+    wish.innerText = "願い事をする (Make a wish)";
     wish.id = "wish-text";
     wish.style.marginLeft = "25px";
     wish.style.fontFamily = "Lato";
