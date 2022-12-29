@@ -4,7 +4,7 @@ The purpose of this project was to build a game for my girlfriend during my wint
 
 ## General Setup
 
-Just clone it and run the `index.html` and you should be good(?).
+Just clone it and run the `index.html` and you should be good(?). You can also visit the domain at `sumikkogurashigacha.com`.
 
 ## Walkthrough
 
