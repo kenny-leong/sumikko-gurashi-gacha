@@ -4,9 +4,8 @@ export const createGemContainer = () => {
     gemContainer.className = "gem-container";
     gemContainer.style.display = "inline-flex";
     gemContainer.style.alignItems = "center";
-    gemContainer.style.backgroundColor = "rgba(0, 0, 0, 0.50)"
-    gemContainer.style.border = "solid black 1px"
-    gemContainer.style.borderBottomWidth = "0px"
+    gemContainer.style.backgroundColor = "rgba(0, 0, 0, 0.5)"
+    gemContainer.style.border = "solid black 2px"
     gemContainer.style.borderRadius = "25px";
     gemContainer.style.paddingLeft = "20px";
     gemContainer.style.paddingRight = "20px";
