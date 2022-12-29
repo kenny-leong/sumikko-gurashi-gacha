@@ -7,10 +7,9 @@ export const createBanner = () => {
     bannerContainer.style.flexGrow = "1";
 
     const banner = document.createElement("img");
-    banner.src = "/images/original.jpeg";
+    banner.src = "/images/reign-of-ice-banner.png";
     banner.style.marginTop = "50px";
-    banner.style.width = "70%";
-    banner.style.height = "100%";
+    banner.style.width = "50%";
     banner.style.boxShadow = `0 0 10px 5px rgba(255, 204, 0, 0.5)`
 
     banner.addEventListener("mouseenter", () => {
