@@ -11,6 +11,6 @@ export const createRightHeaderContent = () => {
     const mainHeader = document.getElementById("main-header");
     mainHeader.appendChild(headerContent);
 
-    createFateContainer();
     createGemContainer();
+    createFateContainer();
 }
