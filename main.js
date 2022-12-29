@@ -2,6 +2,7 @@ import { createGemContainer } from './components/gem.js'
 import { createFateContainer } from './components/fate.js'
 import { createRightHeaderContainer } from './components/upper-right.js'
 import { createSparkleContainer } from './components/sparkle.js'
+import { createBanner } from './components/banner.js'
 
 
 const loadBackground = () => {
@@ -27,4 +28,5 @@ window.onload = async () => {
     createRightHeaderContainer();
     createGemContainer();
     createFateContainer();
+    createBanner();
 };
