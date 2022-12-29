@@ -10,6 +10,5 @@
 #!.yarn/cache
 .pnp.*
 
-.vscode/*
 .parcel-cache/*
 /dist/*
