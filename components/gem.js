@@ -4,10 +4,10 @@ export const createGemContainer = () => {
     gemContainer.className = "gem-container";
     gemContainer.style.display = "inline-flex";
     gemContainer.style.alignItems = "center";
-    gemContainer.style.backgroundColor = "rgba(96, 96, 96, 0.9)"
+    gemContainer.style.backgroundColor = "rgba(0, 0, 0, 0.7)"
     gemContainer.style.border = "solid black 1px"
     gemContainer.style.borderRadius = "25px";
-    gemContainer.style.paddingLeft = "20px";
+    gemContainer.style.paddingLeft = "15px";
     gemContainer.style.paddingRight = "20px";
 
     const startingGems = createNumberDisplay();
@@ -58,8 +58,9 @@ const createBtn = () => {
     btnContainer.className = "btn-container";
 
     const plusBtn = document.createElement("img");
-    plusBtn.src = "/images/add.png";
-    plusBtn.style.height = "35px";
+    plusBtn.src = "/images/plus.png";
+    plusBtn.style.marginTop = "2px";
+    plusBtn.style.height = "33px";
 
     btnContainer.appendChild(plusBtn);
     return btnContainer;

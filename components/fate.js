@@ -3,11 +3,11 @@ export const createFateContainer = () => {
     fateContainer.className = "fate-container";
     fateContainer.style.display = "inline-flex";
     fateContainer.style.alignItems = "center";
-    fateContainer.style.backgroundColor = "rgba(96, 96, 96, 0.9)";
+    fateContainer.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
     fateContainer.style.border = "solid black 1px";
     fateContainer.style.borderRadius = "25px";
     fateContainer.style.paddingLeft = "20px";
-    fateContainer.style.paddingRight = "20px";
+    fateContainer.style.paddingRight = "10px";
     fateContainer.style.marginLeft = "20px";
     fateContainer.style.marginRight = "20px";
 
