@@ -50,7 +50,7 @@ const loadBackground = () => {
 const loadAudio = () => {
     const audio = document.createElement("audio");
     audio.id = "bg-audio";
-    audio.src = "/audio/bg-audio.m4a";
+    audio.src = "/audio/jade-moon-bg.mp3";
 
     document.body.addEventListener("mouseenter", () => {
         audio.play();
