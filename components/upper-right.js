@@ -1,3 +1,6 @@
+import { createGemContainer } from './gem.js'
+import { createFateContainer } from './fate.js'
+
 export const createRightHeaderContent = () => {
     const headerContent = document.createElement("div");
     headerContent.id = "right-header-container";
@@ -7,4 +10,7 @@ export const createRightHeaderContent = () => {
 
     const mainHeader = document.getElementById("main-header");
     mainHeader.appendChild(headerContent);
+
+    createFateContainer();
+    createGemContainer();
 }

@@ -1,5 +1,3 @@
-import { createGemContainer } from './components/gem.js'
-import { createFateContainer } from './components/fate.js'
 import { createRightHeaderContent } from './components/upper-right.js'
 import { createLeftHeaderContent } from './components/sparkle.js'
 import { createBanner } from './components/banner.js'
@@ -35,7 +33,5 @@ window.onload = async () => {
     createHeader();
     createLeftHeaderContent();
     createRightHeaderContent();
-    createGemContainer();
-    createFateContainer();
     createBanner();
 };
