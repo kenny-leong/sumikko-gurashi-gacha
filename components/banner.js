@@ -4,6 +4,7 @@ export const createBanner = () => {
     bannerContainer.style.display = 'flex';
     bannerContainer.style.alignItems = 'center';
     bannerContainer.style.justifyContent = 'center';
+    bannerContainer.style.flexGrow = "1";
 
     const banner = document.createElement("img");
     banner.src = "/images/original.jpeg";

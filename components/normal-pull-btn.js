@@ -1,6 +1,6 @@
-export const create10PullBtn = () => {
+export const createNormalPullBtn = () => {
     const pullBtnContainer = document.createElement('div');
-    pullBtnContainer.className = "pull-btn-x10";
+    pullBtnContainer.className = "normal-pull-btn";
     pullBtnContainer.style.display = "flex";
     pullBtnContainer.style.flexDirection = "column";
     pullBtnContainer.style.alignItems = "center"
@@ -9,7 +9,6 @@ export const create10PullBtn = () => {
     pullBtnContainer.style.backgroundColor = "#FFFFFF";
     pullBtnContainer.style.border = 'solid #A49A90 2px';
     pullBtnContainer.style.borderRadius = "25px";
-    pullBtnContainer.style.marginLeft = "15px";
 
     pullBtnContainer.addEventListener("mouseenter", () => {
         pullBtnContainer.style.transform = "scale(1.02)";
@@ -18,24 +17,24 @@ export const create10PullBtn = () => {
         pullBtnContainer.style.transform = "scale(1)";
     });
 
-    const wishText = createWishBtnText();
-    const fateBallDiv = createFateBall10();
+    const wishText = createNormalPullText();
+    const fateBallDiv = createFateBallOne();
 
     pullBtnContainer.append(wishText, fateBallDiv);
 
     return pullBtnContainer;
 }
 
-const createWishBtnText = () => {
+const createNormalPullText = () => {
     const wishTextDiv = document.createElement("div");
-    wishTextDiv.className = "wish-text-div";
+    wishTextDiv.className = "normal-pull-text-container";
     wishTextDiv.style.marginBottom = "5px";
     wishTextDiv.style.marginTop = "3px";
 
 
     const wishText = document.createElement("span");
-    wishText.innerText = "Wish x10";
-    wishText.id = "wish-btn-text";
+    wishText.innerText = "Wish x1";
+    wishText.id = "normal-pull-text";
     wishText.style.fontFamily = "Genshin";
     wishText.style.color = "#A49A90";
     wishText.style.fontSize = "13px";
@@ -45,9 +44,9 @@ const createWishBtnText = () => {
 }
 
 
-const createFateBall10 = () => {
+const createFateBallOne = () => {
     const fateBallDiv = document.createElement("div");
-    fateBallDiv.class = "fateball-10-div";
+    fateBallDiv.class = "fateball-normal-pull-container";
     fateBallDiv.style.display = "flex";
     fateBallDiv.style.alignItems = "center";
 
@@ -55,15 +54,15 @@ const createFateBall10 = () => {
 
     const fateBallImg = document.createElement("img");
     fateBallImg.src = "/images/fate-ball.png";
-    fateBallImg.id = "10-pull-fateball";
+    fateBallImg.id = "normal-pull-fateball";
     fateBallImg.style.height = "20px";
     fateBallImg.style.marginRight = "10px";
 
     const fateBallText = document.createElement("span");
-    fateBallText.innerText = "x 10";
-    fateBallText.id = "10-pull-text";
+    fateBallText.innerText = "x 1";
+    fateBallText.id = "normal-pull-fateball-text";
     fateBallText.style.fontFamily = "Genshin";
-    fateBallText.style.color = "red";
+    fateBallText.style.color = "#A49A90";
     fateBallText.style.fontSize = "13px";
 
     fateBallDiv.append(fateBallImg, fateBallText);

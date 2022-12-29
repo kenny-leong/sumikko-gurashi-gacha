@@ -29,7 +29,7 @@ const createNumberDisplay = () => {
     numberDiv.style.marginRight = "10px";
 
     const number = document.createElement("span");
-    number.innerText = "2000";
+    number.innerText = "1000";
     number.id = "number";
     number.style.marginLeft = "3px";
     number.style.marginRight = "5px";

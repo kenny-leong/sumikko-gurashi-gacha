@@ -1,8 +1,8 @@
 import { createRightHeaderContent } from './components/upper-right.js'
 import { createLeftHeaderContent } from './components/upper-left.js'
 import { createBanner } from './components/banner.js'
-// import { createRightFooterContent } from './components/lower-right.js'
 import { create10PullBtn } from './components/10-pull-button.js'
+import { createNormalPullBtn } from './components/normal-pull-btn.js'
 
 
 const toggleLoadingScreen = (isVisible) => {
@@ -47,6 +47,7 @@ const loadBackground = () => {
     document.body.style.background = `url("/images/bg-3.jpeg") no-repeat center center fixed`;
     document.body.style.backgroundSize = `cover`;
     document.body.style.cursor = "url('/images/cursor.png'), auto";
+    document.body.style.minHeight = "100vh";
 }
 
 const loadAudio = () => {
@@ -76,9 +77,22 @@ const createFooter = () => {
     footer.id = "main-footer";
     document.body.appendChild(footer);
     footer.style.display = "flex";
-    footer.style.justifyContent = "space-between";
-    footer.style.alignItems = "center";
-    footer.style.background = "black";
+    footer.style.flexDirection = "row";
+    footer.style.justifyContent = "flex-end"
+    footer.style.position = 'fixed';
+    footer.style.bottom = "50px";
+    footer.style.right = "100px";
+
+    const lowerRightFooterDiv = document.createElement("div");
+    lowerRightFooterDiv.id = "lower-right-footer-content";
+    lowerRightFooterDiv.style.display = "flex";
+
+
+    const pullBtnx10 = create10PullBtn();
+    const normalPullBtn = createNormalPullBtn();
+
+    lowerRightFooterDiv.append(normalPullBtn, pullBtnx10);
+    footer.appendChild(lowerRightFooterDiv);
 }
 
 
@@ -91,7 +105,5 @@ window.onload = () => {
     createLeftHeaderContent();
     createRightHeaderContent();
     createBanner();
-    // createFooter();
-    // createRightFooterContent();
-    create10PullBtn();
+    createFooter();
 };
