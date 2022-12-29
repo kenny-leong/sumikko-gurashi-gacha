@@ -22,7 +22,7 @@ const createSparkleImg = () => {
 
     const sparkle = document.createElement("img");
     sparkle.src = "/images/sparkle.png";
-    sparkle.style.height = "30px";
+    sparkle.style.height = "50px";
 
     imgContainer.appendChild(sparkle);
     return imgContainer;
@@ -33,12 +33,14 @@ const createWishDisplay = () => {
     wishDiv.className = "wish-div";
 
     const wish = document.createElement("p");
-    wish.innerText = "Wish";
+    wish.innerText = "願い事をする";
     wish.id = "wish-text";
-    wish.style.fontFamily = "Ubuntu";
+    wish.style.marginLeft = "25px";
+    wish.style.fontFamily = "Lato";
     wish.style.color = "white";
-    wish.style.fontSize = "25px";
-    wish.style.fontWeight = "bolder";
+    wish.style.fontSize = "30px";
+    wish.style.textShadow = "#FC0 1px 0 10px";
+    wish.style.letterSpacing = "2px";
 
     wishDiv.appendChild(wish);
     return wishDiv;
