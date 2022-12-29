@@ -9,7 +9,7 @@ export const createGemContainer = () => {
     gemContainer.style.borderRadius = "25px";
     gemContainer.style.paddingLeft = "15px";
     gemContainer.style.paddingRight = "20px";
-    gemContainer.style.marginRight = "30px";
+    gemContainer.style.marginRight = "40px";
 
     const startingGems = createNumberDisplay();
     const gemImg = createGemImg();

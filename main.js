@@ -1,5 +1,5 @@
 import { createRightHeaderContent } from './components/upper-right.js'
-import { createLeftHeaderContent } from './components/sparkle.js'
+import { createLeftHeaderContent } from './components/upper-left.js'
 import { createBanner } from './components/banner.js'
 
 
