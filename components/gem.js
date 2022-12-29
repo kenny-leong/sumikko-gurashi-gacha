@@ -36,6 +36,8 @@ const createNumberDisplay = () => {
     number.style.color = "white";
     number.style.fontSize = "20px"
     number.style.fontWeight = "bolder";
+    number.style.textShadow = "0 0 5px white";
+    number.style.letterSpacing = "1px";
 
     numberDiv.appendChild(number);
     return numberDiv;

@@ -1,5 +1,5 @@
 #wish-text:hover {
-    animation: bounce 2s infinite;
+    animation: bounce 2s;
   }
 
   @keyframes bounce {
