@@ -8,6 +8,8 @@ export const createFateContainer = () => {
     fateContainer.style.borderRadius = "25px";
     fateContainer.style.paddingLeft = "20px";
     fateContainer.style.paddingRight = "10px";
+    fateContainer.style.paddingTop = "5px";
+    fateContainer.style.paddingBottom = "5px";
     fateContainer.style.marginLeft = "20px";
     fateContainer.style.marginRight = "20px";
 
@@ -27,7 +29,7 @@ const createNumberDisplay = () => {
     numberDiv.style.marginLeft = "5px";
     numberDiv.style.marginRight = "10px";
 
-    const number = document.createElement("p");
+    const number = document.createElement("span");
     number.innerText = "0";
     number.id = "number";
     number.style.marginLeft = "5px";
@@ -49,7 +51,7 @@ const createFateImg = () => {
     fateBall.className= "fate-ball"
     fateBall.src = "/images/fate-ball.png";
     fateBall.style.marginTop = "3px";
-    fateBall.style.height = "30px";
+    fateBall.style.height = "23px";
 
     imgContainer.appendChild(fateBall);
     return imgContainer;

@@ -9,6 +9,8 @@ export const createGemContainer = () => {
     gemContainer.style.borderRadius = "25px";
     gemContainer.style.paddingLeft = "15px";
     gemContainer.style.paddingRight = "20px";
+    gemContainer.style.paddingTop = "5px";
+    gemContainer.style.paddingBottom = "5px"
 
     const startingGems = createNumberDisplay();
     const gemImg = createGemImg();
@@ -26,7 +28,7 @@ const createNumberDisplay = () => {
     numberDiv.style.marginLeft = "5px";
     numberDiv.style.marginRight = "10px";
 
-    const number = document.createElement("p");
+    const number = document.createElement("span");
     number.innerText = "2000";
     number.id = "number";
     number.style.marginLeft = "3px";
@@ -61,11 +63,11 @@ const createBtn = () => {
 
     const plusBtn = document.createElement("img");
     plusBtn.src = "/images/plus.png";
-    plusBtn.style.marginTop = "2px";
-    plusBtn.style.height = "33px";
+    plusBtn.style.marginTop = "3px";
+    plusBtn.style.height = "22px";
 
     plusBtn.addEventListener("mouseenter", () => {
-        plusBtn.style.transform = "scale(0.9)";
+        plusBtn.style.transform = "scale(1.1)";
       });
 
     plusBtn.addEventListener("mouseleave", () => {

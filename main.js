@@ -1,6 +1,8 @@
 import { createRightHeaderContent } from './components/upper-right.js'
 import { createLeftHeaderContent } from './components/upper-left.js'
 import { createBanner } from './components/banner.js'
+// import { createRightFooterContent } from './components/lower-right.js'
+import { create10PullBtn } from './components/10-pull-button.js'
 
 
 const toggleLoadingScreen = (isVisible) => {
@@ -69,6 +71,16 @@ const createHeader = () => {
     header.style.alignItems = 'center';
 }
 
+const createFooter = () => {
+    const footer = document.createElement("div");
+    footer.id = "main-footer";
+    document.body.appendChild(footer);
+    footer.style.display = "flex";
+    footer.style.justifyContent = "space-between";
+    footer.style.alignItems = "center";
+    footer.style.background = "black";
+}
+
 
 window.onload = () => {
     // uncomment on when load screen needed
@@ -79,4 +91,7 @@ window.onload = () => {
     createLeftHeaderContent();
     createRightHeaderContent();
     createBanner();
+    // createFooter();
+    // createRightFooterContent();
+    create10PullBtn();
 };
