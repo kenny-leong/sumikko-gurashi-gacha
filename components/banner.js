@@ -8,8 +8,8 @@ export const createBanner = () => {
     const banner = document.createElement("img");
     banner.src = "/images/original.jpeg";
     banner.style.marginTop = "50px";
-    banner.style.width = "50%";
-    banner.style.height = "400px";
+    banner.style.width = "70%";
+    banner.style.height = "100%";
     banner.style.boxShadow = `0 0 10px 5px rgba(255, 204, 0, 0.5)`
 
     banner.addEventListener("mouseenter", () => {

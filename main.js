@@ -71,8 +71,9 @@ const createHeader = () => {
 
 
 window.onload = () => {
-    loadAudio();
-    showLoadScreen();
+    // uncomment on when load screen needed
+    // loadAudio();
+    // showLoadScreen();
     loadBackground();
     createHeader();
     createLeftHeaderContent();
