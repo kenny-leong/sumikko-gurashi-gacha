@@ -6,17 +6,19 @@ import { createBanner } from './components/banner.js'
 const loadBackground = () => {
     document.body.style.background = `url("/images/bg-3.jpeg") no-repeat center center fixed`;
     document.body.style.backgroundSize = `cover`;
+}
 
+const loadAudio = () => {
     const audio = document.createElement("audio");
     audio.src = "/audio/genshin.mp3";
     audio.volume = "0.5";
+
     window.addEventListener("focus", () => {
         audio.play();
       });
-
-      window.addEventListener("blur", () => {
-        audio.pause();
-      });
+    window.addEventListener("blur", () => {
+    audio.pause();
+    });
 }
 
 const createHeader = () => {
@@ -41,6 +43,7 @@ const createFooter = () => {
 
 window.onload = async () => {
     loadBackground();
+    loadAudio();
     createHeader();
     createLeftHeaderContent();
     createRightHeaderContent();
