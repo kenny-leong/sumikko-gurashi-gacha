@@ -10,7 +10,7 @@ export const createBanner = () => {
     banner.src = "/images/reign-of-ice-banner.png";
     banner.style.marginTop = "50px";
     banner.style.width = "50%";
-    banner.style.boxShadow = `0 0 10px 5px rgba(255, 204, 0, 0.5)`
+    banner.style.boxShadow = `0 0 10px 5px rgba(3, 138, 255, 0.5)`
 
     banner.addEventListener("mouseenter", () => {
         banner.style.transform = "scale(1.01)";
