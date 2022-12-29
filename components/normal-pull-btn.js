@@ -37,7 +37,7 @@ const createNormalPullText = () => {
     wishText.id = "normal-pull-text";
     wishText.style.fontFamily = "Genshin";
     wishText.style.color = "#A49A90";
-    wishText.style.fontSize = "13px";
+    wishText.style.fontSize = "15px";
 
     wishTextDiv.appendChild(wishText);
     return wishTextDiv;
@@ -56,7 +56,7 @@ const createFateBallOne = () => {
     fateBallImg.src = "/images/fate-ball.png";
     fateBallImg.id = "normal-pull-fateball";
     fateBallImg.style.height = "20px";
-    fateBallImg.style.marginRight = "10px";
+    fateBallImg.style.marginRight = "6px";
 
     const fateBallText = document.createElement("span");
     fateBallText.innerText = "x 1";

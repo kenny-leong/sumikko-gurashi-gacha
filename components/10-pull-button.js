@@ -38,7 +38,7 @@ const createWishBtnText = () => {
     wishText.id = "wish-btn-text";
     wishText.style.fontFamily = "Genshin";
     wishText.style.color = "#A49A90";
-    wishText.style.fontSize = "13px";
+    wishText.style.fontSize = "15px";
 
     wishTextDiv.appendChild(wishText);
     return wishTextDiv;
@@ -57,7 +57,7 @@ const createFateBall10 = () => {
     fateBallImg.src = "/images/fate-ball.png";
     fateBallImg.id = "10-pull-fateball";
     fateBallImg.style.height = "20px";
-    fateBallImg.style.marginRight = "10px";
+    fateBallImg.style.marginRight = "6px";
 
     const fateBallText = document.createElement("span");
     fateBallText.innerText = "x 10";
