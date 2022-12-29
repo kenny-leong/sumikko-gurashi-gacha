@@ -8,6 +8,6 @@ Just clone it and run the `index.html` and you should be good(?).
 
 ## Walkthrough
 
-There's not much to it, just "buy" gems, and pull your favorite character. Below is a screenshot of what the interface currently looks like (it's still a work in progress).
+There's not much to it, just "buy" gems, and pull your favorite character. Below is a screenshot of what the UI `(User Interface)` currently looks like (it's still a work in progress).
 
 ![screenshot](/images/gacha-simulator.png "Screenshot")
