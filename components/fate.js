@@ -46,7 +46,8 @@ const createFateImg = () => {
 
     const fateBall = document.createElement("img");
     fateBall.src = "/images/fate-ball.png";
-    fateBall.style.height = "25px";
+    fateBall.style.marginTop = "3px";
+    fateBall.style.height = "30px";
     imgContainer.appendChild(fateBall);
     return imgContainer;
 }
