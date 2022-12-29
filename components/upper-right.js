@@ -1,4 +1,4 @@
-export const createRightHeaderContainer = () => {
+export const createRightHeaderContent = () => {
     const headerContent = document.createElement("div");
     headerContent.id = "right-header-container";
     headerContent.style.display = "flex";

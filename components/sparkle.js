@@ -1,4 +1,4 @@
-export const createSparkleContainer = () => {
+export const createLeftHeaderContent = () => {
     //create sparkle container
     const sparkleContainer = document.createElement("div");
     sparkleContainer.className = "sparkle-container";
@@ -24,7 +24,6 @@ const createSparkleImg = () => {
     const sparkle = document.createElement("img");
     sparkle.src = "/images/sparkle.png";
     sparkle.style.height = "50px";
-
     imgContainer.appendChild(sparkle);
     return imgContainer;
 }

@@ -1,7 +1,7 @@
 import { createGemContainer } from './components/gem.js'
 import { createFateContainer } from './components/fate.js'
-import { createRightHeaderContainer } from './components/upper-right.js'
-import { createSparkleContainer } from './components/sparkle.js'
+import { createRightHeaderContent } from './components/upper-right.js'
+import { createLeftHeaderContent } from './components/sparkle.js'
 import { createBanner } from './components/banner.js'
 
 
@@ -19,13 +19,22 @@ const createHeader = () => {
     header.style.alignItems = 'center';
 }
 
+const createFooter = () => {
+    const footer = document.createElement("div");
+    footer.id = "main-footer";
+    document.body.appendChild(footer);
+    footer.style.display = "flex";
+    footer.style.justifyContent = "space-between";
+    footer.style.alignItems = 'center';
+}
+
 
 
 window.onload = async () => {
     loadBackground();
     createHeader();
-    createSparkleContainer();
-    createRightHeaderContainer();
+    createLeftHeaderContent();
+    createRightHeaderContent();
     createGemContainer();
     createFateContainer();
     createBanner();
