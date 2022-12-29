@@ -10,6 +10,7 @@ export const createBanner = () => {
     banner.style.marginTop = "50px";
     banner.style.width = "50%";
     banner.style.height = "400px";
+    banner.style.boxShadow = `0 0 10px 5px rgba(255, 204, 0, 0.5)`
 
     bannerContainer.appendChild(banner);
     document.body.appendChild(bannerContainer);
