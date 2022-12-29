@@ -1,5 +1,6 @@
 import { createGemContainer } from './components/gem.js'
-import { createFateContainer } from './components/fate.js';
+import { createFateContainer } from './components/fate.js'
+import { createRightHeaderContent } from './components/upper-right.js'
 
 
 const loadBackground = () => {
@@ -8,23 +9,10 @@ const loadBackground = () => {
 }
 
 
-const createHeaderContent = () => {
-    const headerContent = document.createElement("div");
-    headerContent.id = "header-content";
-    headerContent.style.display = "flex";
-    headerContent.style.justifyContent = "flex-end";
-    headerContent.style.marginTop = "30px";
-    document.body.append(headerContent);
-
-}
-
-
-
-
 
 window.onload = async () => {
     loadBackground();
-    createHeaderContent();
-    createFateContainer();
+    createRightHeaderContent();
     createGemContainer();
+    createFateContainer();
 };

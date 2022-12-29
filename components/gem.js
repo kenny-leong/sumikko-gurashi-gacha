@@ -4,8 +4,8 @@ export const createGemContainer = () => {
     gemContainer.className = "gem-container";
     gemContainer.style.display = "inline-flex";
     gemContainer.style.alignItems = "center";
-    gemContainer.style.backgroundColor = "rgba(0, 0, 0, 0.5)"
-    gemContainer.style.border = "solid black 2px"
+    gemContainer.style.backgroundColor = "rgba(96, 96, 96, 0.9)"
+    gemContainer.style.border = "solid black 1px"
     gemContainer.style.borderRadius = "25px";
     gemContainer.style.paddingLeft = "20px";
     gemContainer.style.paddingRight = "20px";
@@ -29,9 +29,12 @@ const createNumberDisplay = () => {
     const number = document.createElement("p");
     number.innerText = "2000";
     number.id = "number";
+    number.style.marginLeft = "3px";
+    number.style.marginRight = "5px";
     number.style.fontFamily = `Ubuntu`
     number.style.color = "white";
     number.style.fontSize = "20px"
+    number.style.fontWeight = "bolder";
 
     numberDiv.appendChild(number);
     return numberDiv;
@@ -43,7 +46,8 @@ const createGemImg = () => {
 
     const primogem = document.createElement("img");
     primogem.src = "/images/primogem.png";
-    primogem.style.height = "25px";
+    primogem.style.marginTop = "3px";
+    primogem.style.height = "20px";
 
     imgContainer.appendChild(primogem);
     return imgContainer;

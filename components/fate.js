@@ -3,11 +3,12 @@ export const createFateContainer = () => {
     fateContainer.className = "fate-container";
     fateContainer.style.display = "inline-flex";
     fateContainer.style.alignItems = "center";
-    fateContainer.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-    fateContainer.style.border = "solid black 2px";
+    fateContainer.style.backgroundColor = "rgba(96, 96, 96, 0.9)";
+    fateContainer.style.border = "solid black 1px";
     fateContainer.style.borderRadius = "25px";
     fateContainer.style.paddingLeft = "20px";
     fateContainer.style.paddingRight = "20px";
+    fateContainer.style.marginLeft = "20px";
     fateContainer.style.marginRight = "20px";
 
     const amt = createNumberDisplay();
@@ -29,9 +30,11 @@ const createNumberDisplay = () => {
     const number = document.createElement("p");
     number.innerText = "0";
     number.id = "number";
-    number.style.fontFamily = `Ubuntu`
+    number.style.marginLeft = "5px";
+    number.style.fontFamily = `Ubuntu`;
     number.style.color = "white";
-    number.style.fontSize = "20px"
+    number.style.fontSize = "20px";
+    number.style.fontWeight = "bolder";
 
     numberDiv.appendChild(number);
     return numberDiv;
