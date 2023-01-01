@@ -10,6 +10,7 @@ export const createLeftHeaderContent = () => {
     sparkleContainer.style.borderRadius = "25px";
     sparkleContainer.style.paddingRight = "16px";
     sparkleContainer.style.paddingLeft = "16px";
+    sparkleContainer.style.marginTop = "40px";
 
     const sparkleImg = createSparkleImg();
     const wishText = createWishDisplay();
@@ -46,12 +47,12 @@ const createWishDisplay = () => {
     wishDiv.className = "wish-div";
 
     const wish = document.createElement("p");
-    wish.innerText = "願い事をする (Make a wish)";
+    wish.innerText = "ねがいごと を する ( Make a wish )";
     wish.id = "wish-text";
     wish.style.marginLeft = "15px";
-    wish.style.fontFamily = "Genshin";
+    wish.style.fontFamily = "Sumikko";
     wish.style.color = "#FC0";
-    wish.style.fontSize = "15px";
+    wish.style.fontSize = "17px";
     wish.style.textShadow = "#FC0 2px 0 10px";
     wish.style.letterSpacing = "2px";
 

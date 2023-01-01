@@ -33,7 +33,7 @@ const createNumberDisplay = () => {
     number.innerText = "0";
     number.id = "number";
     number.style.marginLeft = "5px";
-    number.style.fontFamily = `Genshin`;
+    number.style.fontFamily = `Sumikko`;
     number.style.color = "white";
     number.style.fontSize = "20px";
     number.style.fontWeight = "bolder";

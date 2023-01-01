@@ -31,3 +31,8 @@
     font-family: 'Genshin';
     src: url('/fonts/zh-cn.ttf') format('truetype');
   }
+
+  @font-face {
+    font-family: 'Sumikko';
+    src: url('/fonts/mini-wakuwaku-maru.otf') format('opentype')
+  }

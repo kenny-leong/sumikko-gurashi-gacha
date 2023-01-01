@@ -33,7 +33,7 @@ const createNumberDisplay = () => {
     number.id = "number";
     number.style.marginLeft = "3px";
     number.style.marginRight = "5px";
-    number.style.fontFamily = `Genshin`
+    number.style.fontFamily = `Sumikko`
     number.style.color = "white";
     number.style.fontSize = "20px"
     number.style.fontWeight = "bolder";
@@ -64,7 +64,7 @@ const createBtn = () => {
     const plusBtn = document.createElement("img");
     plusBtn.src = "/images/plus.png";
     plusBtn.style.marginTop = "3px";
-    plusBtn.style.height = "22px";
+    plusBtn.style.height = "24px";
 
     plusBtn.addEventListener("mouseenter", () => {
         plusBtn.style.transform = "scale(1.1)";
