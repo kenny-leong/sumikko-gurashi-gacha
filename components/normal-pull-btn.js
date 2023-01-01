@@ -59,7 +59,7 @@ const createFateBallOne = () => {
 
 
     const fateBallImg = document.createElement("img");
-    fateBallImg.src = "/images/fate-ball.png";
+    fateBallImg.src = "/images/snail.png";
     fateBallImg.id = "normal-pull-fateball";
     fateBallImg.style.height = "20px";
     fateBallImg.style.marginRight = "6px";

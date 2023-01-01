@@ -49,9 +49,9 @@ const createFateImg = () => {
 
     const fateBall = document.createElement("img");
     fateBall.className= "fate-ball"
-    fateBall.src = "/images/fate-ball.png";
+    fateBall.src = "/images/snail.png";
     fateBall.style.marginTop = "3px";
-    fateBall.style.height = "23px";
+    fateBall.style.height = "30px";
 
     imgContainer.appendChild(fateBall);
     return imgContainer;

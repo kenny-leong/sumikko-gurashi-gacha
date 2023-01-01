@@ -47,10 +47,12 @@ export function openPopup() {
     animation.addEventListener('ended', function() {
         // Hide the video element
         animationDiv.remove();
+        audio.play();
       });
 
     animationDiv.appendChild(animation);
     document.body.appendChild(animationDiv);
+
     animation.play();
 }
 
@@ -82,7 +84,7 @@ const createFateBall10 = () => {
 
 
     const fateBallImg = document.createElement("img");
-    fateBallImg.src = "/images/fate-ball.png";
+    fateBallImg.src = "/images/snail.png";
     fateBallImg.id = "10-pull-fateball";
     fateBallImg.style.height = "20px";
     fateBallImg.style.marginRight = "6px";
