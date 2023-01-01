@@ -54,7 +54,7 @@ const loadAudio = () => {
     const audio = document.createElement("audio");
     audio.id = "bg-audio";
     audio.src = "/audio/sumikko-ost.mp3";
-    // audio.autoplay = true;
+    audio.autoplay = true;
 
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
