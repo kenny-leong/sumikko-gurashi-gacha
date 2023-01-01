@@ -8,7 +8,7 @@ import { createNormalPullBtn } from './components/normal-pull-btn.js'
 const toggleLoadingScreen = (isVisible) => {
     if (isVisible) {
         const loadingScreen = document.createElement("div");
-        loadingScreen.id = "loading-screen";
+        loadingScreen.className = "loading-screen";
         loadingScreen.style.position = "fixed";
         loadingScreen.style.height = "100%";
         loadingScreen.style.width = "100%";
@@ -16,7 +16,7 @@ const toggleLoadingScreen = (isVisible) => {
         loadingScreen.style.display = "block";
         loadingScreen.style.top = "0";
         loadingScreen.style.left = "0";
-        loadingScreen.style.zIndex = "999999";
+        loadingScreen.style.zIndex = "9999";
 
         const loadingText = document.createElement("p");
         loadingText.innerText = "Loading....";
@@ -54,6 +54,10 @@ const loadAudio = () => {
     const audio = document.createElement("audio");
     audio.id = "bg-audio";
     audio.src = "/audio/jade-moon-bg.mp3";
+
+    window.addEventListener("focus", () => {
+        audio.play();
+    })
 
     document.body.addEventListener("mouseenter", () => {
         audio.play();
@@ -98,9 +102,9 @@ const createFooter = () => {
 
 window.onload = () => {
     // uncomment on when load screen or audio wanted
-    // loadAudio();
-    // showLoadScreen();
+    loadAudio();
     loadBackground();
+    // showLoadScreen();
     createHeader();
     createLeftHeaderContent();
     createRightHeaderContent();
