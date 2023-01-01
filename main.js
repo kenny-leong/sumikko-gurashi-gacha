@@ -1,7 +1,7 @@
 import { createRightHeaderContent } from './components/upper-right.js'
 import { createLeftHeaderContent } from './components/upper-left.js'
 import { createBanner } from './components/banner.js'
-import { create10PullBtn } from './components/10-pull-button.js'
+import { create10PullBtn } from './components/ten-pull-button.js'
 import { createNormalPullBtn } from './components/normal-pull-btn.js'
 
 
@@ -55,16 +55,13 @@ const loadAudio = () => {
     audio.id = "bg-audio";
     audio.src = "/audio/jade-moon-bg.mp3";
 
-    window.addEventListener("focus", () => {
-        audio.play();
-    })
-
-    document.body.addEventListener("mouseenter", () => {
-        audio.play();
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+          audio.pause();
+        } else {
+          audio.play();
+        }
       });
-    document.body.addEventListener("mouseleave", () => {
-    audio.pause();
-    });
 }
 
 const createHeader = () => {

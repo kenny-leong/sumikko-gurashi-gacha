@@ -18,12 +18,40 @@ export const create10PullBtn = () => {
         pullBtnContainer.style.transform = "scale(1)";
     });
 
+    pullBtnContainer.addEventListener("click", openPopup);
+
     const wishText = createWishBtnText();
     const fateBallDiv = createFateBall10();
 
     pullBtnContainer.append(wishText, fateBallDiv);
 
     return pullBtnContainer;
+}
+
+export function openPopup() {
+    const animationDiv = document.createElement("div");
+    animationDiv.id = "animation-id";
+
+
+    const animation = document.createElement("video");
+    animation.src = "/pull-videos/purple-pull.mp4";
+    animationDiv.style.display = "flex";
+    animationDiv.style.justifyContent = "center";
+    animationDiv.style.position = 'absolute';
+    animationDiv.style.top = '0';
+    animationDiv.style.right = '0';
+    animationDiv.style.bottom = '0';
+    animationDiv.style.left = '0';
+    animationDiv.style.width = '100%';
+    animationDiv.style.height = '100%';
+    animation.addEventListener('ended', function() {
+        // Hide the video element
+        animationDiv.remove();
+      });
+
+    animationDiv.appendChild(animation);
+    document.body.appendChild(animationDiv);
+    animation.play();
 }
 
 const createWishBtnText = () => {
