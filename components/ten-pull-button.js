@@ -30,20 +30,23 @@ export const create10PullBtn = () => {
 
 export function openPopup() {
     const animationDiv = document.createElement("div");
-    animationDiv.id = "animation-id";
-
+    animationDiv.id = "animation-div";
+    animationDiv.style.display = "flex";
+    animationDiv.style.flexDirection = "row";
+    animationDiv.style.justifyContent = "center";
+    animationDiv.style.alignItems = "center";
+    animationDiv.style.position = 'absolute';
+    animationDiv.style.top = '0';
+    animationDiv.style.left = '0';
+    animationDiv.style.width = '100%';
+    animationDiv.style.height = "100%";
 
     const animation = document.createElement("video");
     animation.src = "/pull-videos/sumikko-animation.mp4";
-    animationDiv.style.display = "flex";
-    animationDiv.style.justifyContent = "center";
-    animationDiv.style.position = 'absolute';
-    animationDiv.style.top = '0';
-    animationDiv.style.right = '0';
-    animationDiv.style.bottom = '0';
-    animationDiv.style.left = '0';
-    animationDiv.style.width = '100%';
-    animationDiv.style.height = '100%';
+    animation.id = "animation-video";
+    animation.style.objectFit = "fill";
+    animation.style.width = "100%";
+    animation.style.height = "100%";
     animation.addEventListener('ended', function() {
         // Hide the video element
         animationDiv.remove();
@@ -80,8 +83,6 @@ const createFateBall10 = () => {
     fateBallDiv.class = "fateball-10-div";
     fateBallDiv.style.display = "flex";
     fateBallDiv.style.alignItems = "center";
-
-
 
     const fateBallImg = document.createElement("img");
     fateBallImg.src = "/images/snail.png";

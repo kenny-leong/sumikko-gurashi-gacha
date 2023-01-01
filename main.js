@@ -100,7 +100,7 @@ const createFooter = () => {
 
 window.onload = () => {
     // uncomment on when load screen or audio wanted
-    loadAudio();
+    // loadAudio();
     loadBackground();
     // showLoadScreen();
     createHeader();
