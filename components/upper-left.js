@@ -6,6 +6,10 @@ export const createLeftHeaderContent = () => {
     sparkleContainer.style.alignItems = "center";
     sparkleContainer.style.marginLeft = "30px";
     sparkleContainer.style.marginTop = "20px";
+    sparkleContainer.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    sparkleContainer.style.borderRadius = "25px";
+    sparkleContainer.style.paddingRight = "16px";
+    sparkleContainer.style.paddingLeft = "16px";
 
     const sparkleImg = createSparkleImg();
     const wishText = createWishDisplay();

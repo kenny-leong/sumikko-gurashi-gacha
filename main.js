@@ -44,7 +44,7 @@ const showLoadScreen = () => {
 
 
 const loadBackground = () => {
-    document.body.style.background = `url("/images/bg-3.jpeg") no-repeat center center fixed`;
+    document.body.style.background = `url("/images/stars-moon.jpeg") no-repeat center center fixed`;
     document.body.style.backgroundSize = `cover`;
     document.body.style.cursor = "url('/images/cursor.png'), auto";
     document.body.style.minHeight = "100vh";
@@ -53,7 +53,8 @@ const loadBackground = () => {
 const loadAudio = () => {
     const audio = document.createElement("audio");
     audio.id = "bg-audio";
-    audio.src = "/audio/jade-moon-bg.mp3";
+    audio.src = "/audio/sumikko-ost.mp3";
+    // audio.autoplay = true;
 
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {

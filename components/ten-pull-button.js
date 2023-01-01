@@ -34,7 +34,7 @@ export function openPopup() {
 
 
     const animation = document.createElement("video");
-    animation.src = "/pull-videos/4star.mp4";
+    animation.src = "/pull-videos/sumikko-animation.mp4";
     animationDiv.style.display = "flex";
     animationDiv.style.justifyContent = "center";
     animationDiv.style.position = 'absolute';
