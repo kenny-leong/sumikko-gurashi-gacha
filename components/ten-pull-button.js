@@ -38,7 +38,7 @@ function playSoundEffect() {
 function tenPull() {
     const pullDiv = document.createElement("div");
     pullDiv.style.position = "fixed";
-    pullDiv.style.backgroundColor = "#FFFAA0";
+    pullDiv.style.backgroundColor = "#fff5d7";
     pullDiv.style.top = "0";
     pullDiv.style.left = "0";
     pullDiv.style.right = "0"
@@ -69,7 +69,7 @@ function tenPull() {
         imgDiv.style.backgroundColor = "white";
         imgDiv.style.borderRadius = "25px";
         imgDiv.style.paddingBottom = "20px";
-        imgDiv.style.width = "200px";
+        imgDiv.style.width = "210px";
         imgDiv.style.paddingTop = "20px";
 
         const generatedPull = choose();
@@ -78,12 +78,14 @@ function tenPull() {
         const stars = document.createElement("img");
         if (imgSrc.includes("three")) {
             stars.src = "/images/3star.png";
+            stars.style.width = "30%";
         } else if (imgSrc.includes("four")) {
             stars.src = "/images/4star.png";
+            stars.style.width = "40%";
         } else if (imgSrc.includes("five")) {
             stars.src = "/images/5star.png";
+            stars.style.width = "50%";
         }
-        stars.style.width = "30%";
         stars.style.marginTop = "10px";
 
         const img = document.createElement("img");
@@ -98,7 +100,7 @@ function tenPull() {
         name.style.fontFamily = "Sumikko";
         name.innerText = generatedPull;
         name.style.fontSize = "2em";
-        name.style.color = "pink";
+        name.style.color = "#7c4f27";
         name.style.marginBottom = "15px";
 
         imgDiv.append(name, img, stars);
@@ -114,7 +116,7 @@ function tenPull() {
         imgDiv.style.backgroundColor = "white";
         imgDiv.style.borderRadius = "25px";
         imgDiv.style.paddingBottom = "20px";
-        imgDiv.style.width = "200px";
+        imgDiv.style.width = "210px";
         imgDiv.style.paddingTop = "20px";
 
 
@@ -124,12 +126,14 @@ function tenPull() {
         const stars = document.createElement("img");
         if (imgSrc.includes("three")) {
             stars.src = "/images/3star.png";
+            stars.style.width = "30%";
         } else if (imgSrc.includes("four")) {
             stars.src = "/images/4star.png";
+            stars.style.width = "40%";
         } else if (imgSrc.includes("five")) {
             stars.src = "/images/5star.png";
+            stars.style.width = "50%";
         }
-        stars.style.width = "30%";
         stars.style.marginTop = "10px";
 
 
@@ -146,7 +150,7 @@ function tenPull() {
         name.style.fontFamily = "Sumikko";
         name.innerText = generatedPull;
         name.style.fontSize = "2em";
-        name.style.color = "pink";
+        name.style.color = "#7c4f27";
         name.style.marginBottom = "15px";
 
         imgDiv.append(name, img, stars);
@@ -245,7 +249,7 @@ function chooseImg(character) {
         return 'pull-characters/threeStar/hokori.webp';
     } else if (character == "suzume") {
         return 'pull-characters/threeStar/suzume.webp';
-    } else if (character == "slug") {
+    } else if (character == "nisetsumuri") {
         return 'pull-characters/threeStar/slug.webp';
     } else if (character == "obake") {
         return 'pull-characters/threeStar/obake.webp';
@@ -261,7 +265,7 @@ function chooseImg(character) {
 function choose() {
     const fiveStar = ["penguin-real", "sumi", "neko-gray", "satou", "tokage-real", "harisenbon", "fukuro"];
     const fourStar = ["shirokuma", "tonkatsu", "penguin-?", "neko-tora", "tokage"];
-    const threeStar = ["furoshiki", "zassou", "ebi", "tapioca", "hokori", "suzume", "slug", "obake", "yama", "mogura", "wata"];
+    const threeStar = ["furoshiki", "zassou", "ebi", "tapioca", "hokori", "suzume", "nisetsumuri", "obake", "yama", "mogura", "wata"];
 
     const allChars = [...fiveStar, ...fourStar, ...threeStar];
 
