@@ -18,7 +18,7 @@ export const create10PullBtn = () => {
         pullBtnContainer.style.transform = "scale(1)";
     });
 
-    pullBtnContainer.addEventListener("click", openPopup);
+    // pullBtnContainer.addEventListener("click", onePullPopup);
 
     const wishText = createWishBtnText();
     const fateBallDiv = createFateBall10();
@@ -28,7 +28,52 @@ export const create10PullBtn = () => {
     return pullBtnContainer;
 }
 
-export function selectImgPull() {
+function tenPull() {
+    const pullDiv = document.createElement("div");
+    pullDiv.style.position = "fixed";
+    pullDiv.style.backgroundColor = "#FFFAA0";
+    pullDiv.style.top = "0";
+    pullDiv.style.left = "0";
+    pullDiv.style.right = "0"
+    pullDiv.style.bottom = "0";
+    pullDiv.style.display = "inline-flex";
+    pullDiv.style.flexDirection = "row";
+    pullDiv.style.justifyContent = "center";
+    pullDiv.style.alignItems = "center";
+
+
+    for (let i=0; i<10; i++) {
+        const imgDiv = document.createElement("div");
+        imgDiv.style.display = "flex";
+        imgDiv.style.flexDirection = "column";
+        imgDiv.style.alignItems = "center";
+
+        const generatedPull = choose();
+        const imgSrc = chooseImg(generatedPull);
+
+        const img = document.createElement("img");
+        img.src = imgSrc;
+        img.style.width = "20%";
+
+        const name = document.createElement("h1");
+        name.id = "pull-char-name";
+        name.style.fontFamily = "Sumikko";
+        name.innerText = generatedPull;
+        name.style.fontSize = "2em";
+        name.style.color = "pink";
+
+        imgDiv.append(name, img);
+        pullDiv.append(imgDiv);
+    }
+
+
+
+
+
+    document.body.appendChild(imgDiv);
+}
+
+export function onePull() {
     const imgDiv = document.createElement("div");
     imgDiv.id = "pull-img-div";
     imgDiv.style.position = "fixed";
@@ -40,7 +85,6 @@ export function selectImgPull() {
     imgDiv.style.flexDirection = "column";
     imgDiv.style.alignItems = "center";
     imgDiv.style.justifyContent = "center";
-    imgDiv.style.border = "3px solid orange";
     imgDiv.style.padding = "100px";
     imgDiv.style.backgroundColor = "#FFFAA0";
 
@@ -63,6 +107,8 @@ export function selectImgPull() {
     imgDiv.append(name, img);
     document.body.appendChild(imgDiv);
 }
+
+
 
 function chooseImg(character) {
     if (character == 'penguin-real') {
@@ -114,7 +160,7 @@ function chooseImg(character) {
     }
 }
 
-export function choose() {
+function choose() {
     const fiveStar = ["penguin-real", "sumi", "neko-gray", "satou", "tokage-real", "harisenbon", "fukuro"];
     const fourStar = ["shirokuma", "tonkatsu", "penguin-?", "neko-tora", "tokage"];
     const threeStar = ["furoshiki", "zassou", "ebi", "tapioca", "hokori", "suzume", "slug", "obake", "yama", "mogura", "wata"];
@@ -153,7 +199,7 @@ export function choose() {
     }
 }
 
-export function openPopup() {
+export function onePullPopup() {
     const animationDiv = document.createElement("div");
     animationDiv.id = "animation-div";
     animationDiv.style.display = "flex";
@@ -175,7 +221,7 @@ export function openPopup() {
     animation.addEventListener('ended', function() {
         // Hide the video element
         animationDiv.remove();
-        selectImgPull();
+        onePull();
       });
 
     animationDiv.appendChild(animation);

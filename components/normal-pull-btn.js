@@ -1,4 +1,4 @@
-import { openPopup } from "./ten-pull-button.js";
+import { onePullPopup } from "./ten-pull-button.js";
 
 export const createNormalPullBtn = () => {
     const pullBtnContainer = document.createElement('div');
@@ -19,7 +19,7 @@ export const createNormalPullBtn = () => {
         pullBtnContainer.style.transform = "scale(1)";
     });
 
-    pullBtnContainer.addEventListener("click", openPopup);
+    pullBtnContainer.addEventListener("click", onePullPopup);
 
     const wishText = createNormalPullText();
     const fateBallDiv = createFateBallOne();
