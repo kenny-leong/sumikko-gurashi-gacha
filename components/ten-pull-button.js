@@ -80,6 +80,7 @@ function tenPull() {
             stars.src = "/images/3star.png";
             stars.style.width = "30%";
             imgDiv.style.border = "2px solid #b4ecb4"
+            imgDiv.style.boxShadow = "0 0 10px 3px #b4ecb4";
         } else if (imgSrc.includes("four")) {
             stars.src = "/images/4star.png";
             stars.style.width = "40%";
@@ -105,7 +106,7 @@ function tenPull() {
         name.style.fontFamily = "Sumikko";
         name.innerText = generatedPull;
         name.style.fontSize = "2em";
-        name.style.color = "#b4ecb4";
+        name.style.color = "#572b0c";
         name.style.marginBottom = "15px";
 
         imgDiv.append(name, img, stars);
@@ -133,6 +134,7 @@ function tenPull() {
             stars.src = "/images/3star.png";
             stars.style.width = "30%";
             imgDiv.style.border = "2px solid #b4ecb4"
+            imgDiv.style.boxShadow = "0 0 10px 3px #b4ecb4";
         } else if (imgSrc.includes("four")) {
             stars.src = "/images/4star.png";
             stars.style.width = "40%";
@@ -160,7 +162,7 @@ function tenPull() {
         name.style.fontFamily = "Sumikko";
         name.innerText = generatedPull;
         name.style.fontSize = "2em";
-        name.style.color = "#b4ecb4";
+        name.style.color = "#572b0c";
         name.style.marginBottom = "15px";
 
         imgDiv.append(name, img, stars);
