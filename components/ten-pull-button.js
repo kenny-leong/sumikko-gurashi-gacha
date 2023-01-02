@@ -169,10 +169,7 @@ export function onePull() {
     imgDiv.style.flexDirection = "column";
     imgDiv.style.alignItems = "center";
     imgDiv.style.justifyContent = "center";
-    imgDiv.style.padding = "100px";
     imgDiv.style.backgroundColor = "#FFFAA0";
-    imgDiv.style.paddingTop = "15px";
-    imgDiv.style.paddingBottom = "15px";
 
     const generatedPull = choose();
     const imgSrc = chooseImg(generatedPull);
@@ -193,8 +190,19 @@ export function onePull() {
     name.style.fontSize = "4em";
     name.style.color = "pink";
 
+    const stars = document.createElement("img");
+    if (imgSrc.includes("three")) {
+        stars.src = "/images/3star.png";
+    } else if (imgSrc.includes("four")) {
+        stars.src = "/images/4star.png";
+    } else if (imgSrc.includes("five")) {
+        stars.src = "/images/5star.png";
+    }
+    stars.style.width = "30%";
+    stars.style.marginTop = "10px";
 
-    imgDiv.append(name, img);
+
+    imgDiv.append(name, img, stars);
     document.body.appendChild(imgDiv);
 }
 
