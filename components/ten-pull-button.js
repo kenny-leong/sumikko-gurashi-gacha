@@ -28,6 +28,13 @@ export const create10PullBtn = () => {
     return pullBtnContainer;
 }
 
+function playSoundEffect() {
+    const audio = document.createElement("audio");
+    audio.id = "pull-effect";
+    audio.src = "/audio/pull-effect.m4a";
+    audio.play();
+}
+
 function tenPull() {
     const pullDiv = document.createElement("div");
     pullDiv.style.position = "fixed";
@@ -37,16 +44,29 @@ function tenPull() {
     pullDiv.style.right = "0"
     pullDiv.style.bottom = "0";
     pullDiv.style.display = "flex";
-    pullDiv.style.flexDirection = "row";
-    pullDiv.style.justifyContent = "space-around";
-    pullDiv.style.flexWrap = "wrap";
+    pullDiv.style.flexDirection = "column";
+    pullDiv.style.alignItems = "center";
 
-    for (let i=0; i<10; i++) {
+    const topDiv = document.createElement("div");
+    topDiv.style.display = "flex";
+    topDiv.style.justifyContent = "space-evenly";
+    topDiv.style.marginTop = "30px";
+
+    const bottomDiv = document.createElement("div");
+    bottomDiv.style.display = "flex";
+    bottomDiv.style.justifyContent = "space-evenly";
+
+    for (let i=0; i<5; i++) {
         const imgDiv = document.createElement("div");
         imgDiv.style.display = "flex";
         imgDiv.style.flexDirection = "column";
         imgDiv.style.alignItems = "center";
         imgDiv.style.margin = "15px";
+        imgDiv.style.backgroundColor = "white";
+        imgDiv.style.borderRadius = "25px";
+        imgDiv.style.paddingLeft = "40px";
+        imgDiv.style.paddingRight = "40px";
+        imgDiv.style.paddingBottom = "20px";
 
         const generatedPull = choose();
         const imgSrc = chooseImg(generatedPull);
@@ -55,18 +75,52 @@ function tenPull() {
         img.src = imgSrc;
         img.style.width = "200%";
         img.style.maxWidth = "100px";
+        img.style.maxHeight = "80px";
 
         const name = document.createElement("h1");
         name.id = "pull-char-name";
         name.style.fontFamily = "Sumikko";
         name.innerText = generatedPull;
-        name.style.fontSize = "3em";
+        name.style.fontSize = "2em";
         name.style.color = "pink";
 
         imgDiv.append(name, img);
-        pullDiv.append(imgDiv);
+        topDiv.append(imgDiv);
     }
 
+    for (let i=0; i<5; i++) {
+        const imgDiv = document.createElement("div");
+        imgDiv.style.display = "flex";
+        imgDiv.style.flexDirection = "column";
+        imgDiv.style.alignItems = "center";
+        imgDiv.style.margin = "15px";
+        imgDiv.style.backgroundColor = "white";
+        imgDiv.style.borderRadius = "25px";
+        imgDiv.style.paddingLeft = "40px";
+        imgDiv.style.paddingRight = "40px";
+        imgDiv.style.paddingBottom = "20px";
+
+        const generatedPull = choose();
+        const imgSrc = chooseImg(generatedPull);
+
+        const img = document.createElement("img");
+        img.src = imgSrc;
+        img.style.width = "200%";
+        img.style.maxWidth = "100px";
+        img.style.maxHeight = "80px";
+
+        const name = document.createElement("h1");
+        name.id = "pull-char-name";
+        name.style.fontFamily = "Sumikko";
+        name.innerText = generatedPull;
+        name.style.fontSize = "em";
+        name.style.color = "pink";
+
+        imgDiv.append(name, img);
+        bottomDiv.append(imgDiv);
+    }
+
+    pullDiv.append(topDiv, bottomDiv);
     document.body.appendChild(pullDiv);
 }
 
@@ -219,6 +273,7 @@ export function onePullPopup() {
     animation.addEventListener('ended', function() {
         // Hide the video element
         animationDiv.remove();
+        playSoundEffect();
         onePull();
       });
 
@@ -250,6 +305,7 @@ function tenPullPopup() {
     animation.addEventListener('ended', function() {
         // Hide the video element
         animationDiv.remove();
+        playSoundEffect();
         tenPull();
       });
 
