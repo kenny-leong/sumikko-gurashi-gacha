@@ -38,7 +38,7 @@ function tenPull() {
     pullDiv.style.bottom = "0";
     pullDiv.style.display = "flex";
     pullDiv.style.flexDirection = "row";
-    pullDiv.style.justifyContent = "space-evenly";
+    pullDiv.style.justifyContent = "space-around";
     pullDiv.style.flexWrap = "wrap";
 
     for (let i=0; i<10; i++) {
