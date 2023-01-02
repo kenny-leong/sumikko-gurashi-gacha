@@ -53,6 +53,7 @@ function tenPull() {
         const img = document.createElement("img");
         img.src = imgSrc;
         img.style.width = "40%";
+        img.style.maxWidth = "100px";
 
         const name = document.createElement("h1");
         name.id = "pull-char-name";
@@ -89,7 +90,8 @@ export function onePull() {
     const img = document.createElement("img");
     img.src = imgSrc;
     img.id = "generated-img-id";
-    img.style.width = "30%";
+    img.style.width = "300%";
+    img.style.maxWidth = "300px";
 
     const name = document.createElement("h1");
     name.id = "pull-char-name";
