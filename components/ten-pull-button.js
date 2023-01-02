@@ -84,6 +84,7 @@ function tenPull() {
             stars.src = "/images/5star.png";
         }
         stars.style.width = "30%";
+        stars.style.marginTop = "10px";
 
         const img = document.createElement("img");
         img.src = imgSrc;
@@ -98,6 +99,7 @@ function tenPull() {
         name.innerText = generatedPull;
         name.style.fontSize = "2em";
         name.style.color = "pink";
+        name.style.marginBottom = "15px";
 
         imgDiv.append(name, img, stars);
         topDiv.append(imgDiv);
@@ -128,6 +130,7 @@ function tenPull() {
             stars.src = "/images/5star.png";
         }
         stars.style.width = "30%";
+        stars.style.marginTop = "10px";
 
 
         const img = document.createElement("img");
@@ -144,6 +147,7 @@ function tenPull() {
         name.innerText = generatedPull;
         name.style.fontSize = "2em";
         name.style.color = "pink";
+        name.style.marginBottom = "15px";
 
         imgDiv.append(name, img, stars);
         bottomDiv.append(imgDiv);
