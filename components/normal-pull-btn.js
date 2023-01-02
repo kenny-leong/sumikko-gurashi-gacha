@@ -19,7 +19,9 @@ export const createNormalPullBtn = () => {
         pullBtnContainer.style.transform = "scale(1)";
     });
 
-    pullBtnContainer.addEventListener("click", openPopup);
+    pullBtnContainer.addEventListener("click", () => {
+        openPopup();
+    });
 
     const wishText = createNormalPullText();
     const fateBallDiv = createFateBallOne();
@@ -29,7 +31,50 @@ export const createNormalPullBtn = () => {
     return pullBtnContainer;
 }
 
+export function selectImgPull() {
+    const imgDiv = document.createElement("div");
+    imgDiv.id = "pull-img-div";
+    imgDiv.style.display = "flex";
+}
 
+export function choose() {
+    const fiveStar = ["penguin-real", "sumi", "neko-gray", "satou", "tokage-real", "harisenbon", "fukuro"];
+    const fourStar = ["shirokuma", "tonkatsu", "penguin-?", "neko-tora", "tokage"];
+    const threeStar = ["furoshiki", "zassou", "ebi", "tapioca", "hokori", "suzume", "slug", "obake", "yama", "mogura", "wata"];
+
+    const allChars = [...fiveStar, ...fourStar, ...threeStar];
+
+    //generate random num btwn 0-1;
+    const randomNum = Math.random();
+
+    //generate probabilities
+    const chanceNums = [];
+    const realPenguinChanceUp = 0.016;
+    chanceNums.push(realPenguinChanceUp)
+
+    for (let i=1; i<fiveStar.length; i++) {
+        chanceNums.push(0.006);
+    }
+
+    for (let i=0; i<fourStar.length; i++) {
+        chanceNums.push(0.025);
+    }
+
+    for (let i=1; i<threeStar.length; i++) {
+        chanceNums.push(0.0747)
+    }
+    //adds total probability percentage to 100%
+    chanceNums.push(0.076);
+
+
+    let runningTotal = 0;
+    for (let i=0; i<allChars.length; i++) {
+        runningTotal += chanceNums[i];
+        if (randomNum < runningTotal) {
+            return allChars[i]
+        }
+    }
+}
 
 const createNormalPullText = () => {
     const wishTextDiv = document.createElement("div");
@@ -41,7 +86,7 @@ const createNormalPullText = () => {
     const wishText = document.createElement("span");
     wishText.innerText = "Wish x1";
     wishText.id = "normal-pull-text";
-    wishText.style.fontFamily = "Genshin";
+    wishText.style.fontFamily = "Sumikko";
     wishText.style.color = "#A49A90";
     wishText.style.fontSize = "15px";
 

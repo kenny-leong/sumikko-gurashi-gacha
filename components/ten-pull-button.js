@@ -69,7 +69,7 @@ const createWishBtnText = () => {
     const wishText = document.createElement("span");
     wishText.innerText = "Wish x10";
     wishText.id = "wish-btn-text";
-    wishText.style.fontFamily = "Genshin";
+    wishText.style.fontFamily = "Sumikko";
     wishText.style.color = "#A49A90";
     wishText.style.fontSize = "15px";
 

@@ -47,7 +47,7 @@ const createWishDisplay = () => {
     wishDiv.className = "wish-div";
 
     const wish = document.createElement("p");
-    wish.innerText = "ねがいごと を する ( Make a wish )";
+    wish.innerText = "ねがいごとをする ( Make a wish )";
     wish.id = "wish-text";
     wish.style.marginLeft = "15px";
     wish.style.fontFamily = "Sumikko";
