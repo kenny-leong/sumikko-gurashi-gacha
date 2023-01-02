@@ -53,6 +53,7 @@ function tenPull() {
     topDiv.style.justifyContent = "space-evenly";
     topDiv.style.marginBottom = "20px";
     topDiv.style.flexWrap = "wrap";
+    topDiv.style.marginTop = "10%"
 
     const bottomDiv = document.createElement("div");
     bottomDiv.style.display = "flex";
@@ -67,27 +68,38 @@ function tenPull() {
         imgDiv.style.margin = "15px";
         imgDiv.style.backgroundColor = "white";
         imgDiv.style.borderRadius = "25px";
-        imgDiv.style.paddingLeft = "40px";
-        imgDiv.style.paddingRight = "40px";
         imgDiv.style.paddingBottom = "20px";
+        imgDiv.style.width = "200px";
+        imgDiv.style.paddingTop = "20px";
 
         const generatedPull = choose();
         const imgSrc = chooseImg(generatedPull);
 
+        const stars = document.createElement("img");
+        if (imgSrc.includes("three")) {
+            stars.src = "/images/3star.png";
+        } else if (imgSrc.includes("four")) {
+            stars.src = "/images/4star.png";
+        } else if (imgSrc.includes("five")) {
+            stars.src = "/images/5star.png";
+        }
+        stars.style.width = "30%";
+
         const img = document.createElement("img");
         img.src = imgSrc;
         img.style.width = "200%";
-        img.style.maxWidth = "100px";
-        img.style.maxHeight = "80px";
+        img.style.minHeight = "30px";
+        img.style.maxWidth = "50px";
+        img.style.maxHeight = "50px";
 
-        const name = document.createElement("h1");
+        const name = document.createElement("span");
         name.id = "pull-char-name";
         name.style.fontFamily = "Sumikko";
         name.innerText = generatedPull;
         name.style.fontSize = "2em";
         name.style.color = "pink";
 
-        imgDiv.append(name, img);
+        imgDiv.append(name, img, stars);
         topDiv.append(imgDiv);
     }
 
@@ -99,27 +111,41 @@ function tenPull() {
         imgDiv.style.margin = "15px";
         imgDiv.style.backgroundColor = "white";
         imgDiv.style.borderRadius = "25px";
-        imgDiv.style.paddingLeft = "40px";
-        imgDiv.style.paddingRight = "40px";
         imgDiv.style.paddingBottom = "20px";
+        imgDiv.style.width = "200px";
+        imgDiv.style.paddingTop = "20px";
+
 
         const generatedPull = choose();
         const imgSrc = chooseImg(generatedPull);
 
+        const stars = document.createElement("img");
+        if (imgSrc.includes("three")) {
+            stars.src = "/images/3star.png";
+        } else if (imgSrc.includes("four")) {
+            stars.src = "/images/4star.png";
+        } else if (imgSrc.includes("five")) {
+            stars.src = "/images/5star.png";
+        }
+        stars.style.width = "30%";
+
+
         const img = document.createElement("img");
         img.src = imgSrc;
         img.style.width = "200%";
-        img.style.maxWidth = "100px";
-        img.style.maxHeight = "80px";
+        img.style.minHeight = "30px";
+        img.style.maxWidth = "50px";
+        img.style.maxHeight = "50px";
 
-        const name = document.createElement("h1");
+
+        const name = document.createElement("span");
         name.id = "pull-char-name";
         name.style.fontFamily = "Sumikko";
         name.innerText = generatedPull;
-        name.style.fontSize = "em";
+        name.style.fontSize = "2em";
         name.style.color = "pink";
 
-        imgDiv.append(name, img);
+        imgDiv.append(name, img, stars);
         bottomDiv.append(imgDiv);
     }
 
@@ -141,6 +167,8 @@ export function onePull() {
     imgDiv.style.justifyContent = "center";
     imgDiv.style.padding = "100px";
     imgDiv.style.backgroundColor = "#FFFAA0";
+    imgDiv.style.paddingTop = "15px";
+    imgDiv.style.paddingBottom = "15px";
 
     const generatedPull = choose();
     const imgSrc = chooseImg(generatedPull);
@@ -150,6 +178,9 @@ export function onePull() {
     img.id = "generated-img-id";
     img.style.width = "300%";
     img.style.maxWidth = "300px";
+    img.style.borderRadius = "30px";
+    img.style.padding = "20px";
+    img.style.backgroundColor = "white";
 
     const name = document.createElement("h1");
     name.id = "pull-char-name";
@@ -191,7 +222,7 @@ function chooseImg(character) {
     } else if (character == "tokage") {
         return 'pull-characters/fourStar/tokage.webp';
     } else if (character == "furoshiki") {
-        return 'pull-characters/threeStar/furoshiki.webp';
+        return 'pull-characters/threeStar/furoshiki.png';
     } else if (character == "zassou") {
         return 'pull-characters/threeStar/zassou.webp';
     } else if (character == "ebi") {
