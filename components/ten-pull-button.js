@@ -79,12 +79,17 @@ function tenPull() {
         if (imgSrc.includes("three")) {
             stars.src = "/images/3star.png";
             stars.style.width = "30%";
+            imgDiv.style.border = "2px solid #b4ecb4"
         } else if (imgSrc.includes("four")) {
             stars.src = "/images/4star.png";
             stars.style.width = "40%";
+            imgDiv.style.border = "2px solid #e463f0"
+            imgDiv.style.boxShadow = "0 0 10px 3px #e463f0";
         } else if (imgSrc.includes("five")) {
             stars.src = "/images/5star.png";
             stars.style.width = "50%";
+            imgDiv.style.border = "2px solid #ffd700"
+            imgDiv.style.boxShadow = "0 0 10px 3px #ffd700";
         }
         stars.style.marginTop = "10px";
 
@@ -100,7 +105,7 @@ function tenPull() {
         name.style.fontFamily = "Sumikko";
         name.innerText = generatedPull;
         name.style.fontSize = "2em";
-        name.style.color = "#7c4f27";
+        name.style.color = "#b4ecb4";
         name.style.marginBottom = "15px";
 
         imgDiv.append(name, img, stars);
@@ -127,12 +132,17 @@ function tenPull() {
         if (imgSrc.includes("three")) {
             stars.src = "/images/3star.png";
             stars.style.width = "30%";
+            imgDiv.style.border = "2px solid #b4ecb4"
         } else if (imgSrc.includes("four")) {
             stars.src = "/images/4star.png";
             stars.style.width = "40%";
+            imgDiv.style.border = "2px solid #e463f0"
+            imgDiv.style.boxShadow = "0 0 10px 3px #e463f0";
         } else if (imgSrc.includes("five")) {
             stars.src = "/images/5star.png";
             stars.style.width = "50%";
+            imgDiv.style.border = "2px solid #ffd700"
+            imgDiv.style.boxShadow = "0 0 10px 3px #ffd700";
         }
         stars.style.marginTop = "10px";
 
@@ -150,7 +160,7 @@ function tenPull() {
         name.style.fontFamily = "Sumikko";
         name.innerText = generatedPull;
         name.style.fontSize = "2em";
-        name.style.color = "#7c4f27";
+        name.style.color = "#b4ecb4";
         name.style.marginBottom = "15px";
 
         imgDiv.append(name, img, stars);
