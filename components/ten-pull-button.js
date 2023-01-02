@@ -18,7 +18,7 @@ export const create10PullBtn = () => {
         pullBtnContainer.style.transform = "scale(1)";
     });
 
-    // pullBtnContainer.addEventListener("click", onePullPopup);
+    pullBtnContainer.addEventListener("click", tenPullPopup);
 
     const wishText = createWishBtnText();
     const fateBallDiv = createFateBall10();
@@ -36,11 +36,10 @@ function tenPull() {
     pullDiv.style.left = "0";
     pullDiv.style.right = "0"
     pullDiv.style.bottom = "0";
-    pullDiv.style.display = "inline-flex";
+    pullDiv.style.display = "flex";
     pullDiv.style.flexDirection = "row";
-    pullDiv.style.justifyContent = "center";
-    pullDiv.style.alignItems = "center";
-
+    pullDiv.style.justifyContent = "space-evenly";
+    pullDiv.style.flexWrap = "wrap";
 
     for (let i=0; i<10; i++) {
         const imgDiv = document.createElement("div");
@@ -53,24 +52,20 @@ function tenPull() {
 
         const img = document.createElement("img");
         img.src = imgSrc;
-        img.style.width = "20%";
+        img.style.width = "40%";
 
         const name = document.createElement("h1");
         name.id = "pull-char-name";
         name.style.fontFamily = "Sumikko";
         name.innerText = generatedPull;
-        name.style.fontSize = "2em";
+        name.style.fontSize = "3em";
         name.style.color = "pink";
 
         imgDiv.append(name, img);
         pullDiv.append(imgDiv);
     }
 
-
-
-
-
-    document.body.appendChild(imgDiv);
+    document.body.appendChild(pullDiv);
 }
 
 export function onePull() {
@@ -229,6 +224,38 @@ export function onePullPopup() {
 
     animation.play();
 }
+
+function tenPullPopup() {
+    const animationDiv = document.createElement("div");
+    animationDiv.id = "animation-div";
+    animationDiv.style.display = "flex";
+    animationDiv.style.flexDirection = "row";
+    animationDiv.style.justifyContent = "center";
+    animationDiv.style.alignItems = "center";
+    animationDiv.style.position = 'absolute';
+    animationDiv.style.top = '0';
+    animationDiv.style.left = '0';
+    animationDiv.style.width = '100%';
+    animationDiv.style.height = "100%";
+
+    const animation = document.createElement("video");
+    animation.src = "/pull-videos/sumikko-animation.mp4";
+    animation.id = "animation-video";
+    animation.style.objectFit = "fill";
+    animation.style.width = "100%";
+    animation.style.height = "100%";
+    animation.addEventListener('ended', function() {
+        // Hide the video element
+        animationDiv.remove();
+        tenPull();
+      });
+
+    animationDiv.appendChild(animation);
+    document.body.appendChild(animationDiv);
+
+    animation.play();
+}
+
 
 const createWishBtnText = () => {
     const wishTextDiv = document.createElement("div");
