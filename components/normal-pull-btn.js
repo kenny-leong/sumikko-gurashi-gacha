@@ -35,6 +35,25 @@ export function selectImgPull() {
     const imgDiv = document.createElement("div");
     imgDiv.id = "pull-img-div";
     imgDiv.style.display = "flex";
+    imgDiv.style.flexDirection = "row";
+    imgDiv.style.justifyContent = "center";
+    imgDiv.style.alignItems = "center";
+    imgDiv.style.width = "500px";
+    imgDiv.style.height = "500px";
+
+    const generatedPull = choose();
+
+    let sourceImg;
+
+
+    const img = document.createElement("img");
+
+}
+
+function chooseImg(character) {
+    if (character == 'penguin-real') {
+        return
+    }
 }
 
 export function choose() {
