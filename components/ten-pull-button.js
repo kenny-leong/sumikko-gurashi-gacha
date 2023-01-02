@@ -46,13 +46,14 @@ function tenPull() {
         imgDiv.style.display = "flex";
         imgDiv.style.flexDirection = "column";
         imgDiv.style.alignItems = "center";
+        imgDiv.style.margin = "15px";
 
         const generatedPull = choose();
         const imgSrc = chooseImg(generatedPull);
 
         const img = document.createElement("img");
         img.src = imgSrc;
-        img.style.width = "40%";
+        img.style.width = "200%";
         img.style.maxWidth = "100px";
 
         const name = document.createElement("h1");
