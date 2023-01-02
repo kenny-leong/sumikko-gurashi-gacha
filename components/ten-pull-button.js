@@ -46,15 +46,18 @@ function tenPull() {
     pullDiv.style.display = "flex";
     pullDiv.style.flexDirection = "column";
     pullDiv.style.alignItems = "center";
+    pullDiv.style.overflow = "scroll";
 
     const topDiv = document.createElement("div");
     topDiv.style.display = "flex";
     topDiv.style.justifyContent = "space-evenly";
-    topDiv.style.marginTop = "30px";
+    topDiv.style.marginBottom = "20px";
+    topDiv.style.flexWrap = "wrap";
 
     const bottomDiv = document.createElement("div");
     bottomDiv.style.display = "flex";
     bottomDiv.style.justifyContent = "space-evenly";
+    bottomDiv.style.flexWrap = "wrap";
 
     for (let i=0; i<5; i++) {
         const imgDiv = document.createElement("div");
