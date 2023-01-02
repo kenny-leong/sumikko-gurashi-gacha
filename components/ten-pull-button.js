@@ -37,12 +37,12 @@ export function selectImgPull() {
     imgDiv.style.right = "0"
     imgDiv.style.bottom = "0";
     imgDiv.style.display = "flex";
+    imgDiv.style.flexDirection = "column";
     imgDiv.style.alignItems = "center";
     imgDiv.style.justifyContent = "center";
     imgDiv.style.border = "3px solid orange";
     imgDiv.style.padding = "100px";
-    imgDiv.style.backgroundColor = "white";
-
+    imgDiv.style.backgroundColor = "#FFFAA0";
 
     const generatedPull = choose();
     const imgSrc = chooseImg(generatedPull);
@@ -50,9 +50,17 @@ export function selectImgPull() {
     const img = document.createElement("img");
     img.src = imgSrc;
     img.id = "generated-img-id";
+    img.style.width = "30%";
+
+    const name = document.createElement("h1");
+    name.id = "pull-char-name";
+    name.style.fontFamily = "Sumikko";
+    name.innerText = generatedPull;
+    name.style.fontSize = "4em";
+    name.style.color = "pink";
 
 
-    imgDiv.append(img);
+    imgDiv.append(name, img);
     document.body.appendChild(imgDiv);
 }
 
