@@ -211,7 +211,7 @@ export function onePullPopup() {
     animationDiv.style.height = "100%";
 
     const animation = document.createElement("video");
-    animation.src = "/pull-videos/sumikko-animation.mp4";
+    animation.src = "/pull-videos/pull-animation.mp4";
     animation.id = "animation-video";
     animation.style.objectFit = "fill";
     animation.style.width = "100%";
@@ -242,7 +242,7 @@ function tenPullPopup() {
     animationDiv.style.height = "100%";
 
     const animation = document.createElement("video");
-    animation.src = "/pull-videos/sumikko-animation.mp4";
+    animation.src = "/pull-videos/pull-animation.mp4";
     animation.id = "animation-video";
     animation.style.objectFit = "fill";
     animation.style.width = "100%";
