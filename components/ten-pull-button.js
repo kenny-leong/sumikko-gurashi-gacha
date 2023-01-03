@@ -3,8 +3,8 @@ export const create10PullBtn = () => {
     pullBtnContainer.className = "pull-btn-x10";
     pullBtnContainer.style.display = "flex";
     pullBtnContainer.style.flexDirection = "column";
-    pullBtnContainer.style.alignItems = "center"
-    pullBtnContainer.style.width = "200px"
+    pullBtnContainer.style.alignItems = "center";
+    pullBtnContainer.style.width = "200px";
     pullBtnContainer.style.height = "50px";
     pullBtnContainer.style.backgroundColor = "#FFFFFF";
     pullBtnContainer.style.border = 'solid #A49A90 2px';
@@ -41,7 +41,7 @@ function tenPull() {
     pullDiv.style.backgroundColor = "#fff5d7";
     pullDiv.style.top = "0";
     pullDiv.style.left = "0";
-    pullDiv.style.right = "0"
+    pullDiv.style.right = "0";
     pullDiv.style.bottom = "0";
     pullDiv.style.display = "flex";
     pullDiv.style.flexDirection = "column";
@@ -53,7 +53,7 @@ function tenPull() {
     topDiv.style.justifyContent = "space-evenly";
     topDiv.style.marginBottom = "20px";
     topDiv.style.flexWrap = "wrap";
-    topDiv.style.marginTop = "10%"
+    topDiv.style.marginTop = "10%";
 
     const bottomDiv = document.createElement("div");
     bottomDiv.style.display = "flex";
@@ -79,7 +79,7 @@ function tenPull() {
         if (imgSrc.includes("three")) {
             stars.src = "/images/3star.png";
             stars.style.width = "30%";
-            imgDiv.style.border = "2px solid #b4ecb4"
+            imgDiv.style.border = "2px solid #b4ecb4";
             imgDiv.style.boxShadow = "0 0 10px 3px #b4ecb4";
         } else if (imgSrc.includes("four")) {
             stars.src = "/images/4star.png";
@@ -89,7 +89,7 @@ function tenPull() {
         } else if (imgSrc.includes("five")) {
             stars.src = "/images/5star.png";
             stars.style.width = "50%";
-            imgDiv.style.border = "2px solid #ffd700"
+            imgDiv.style.border = "2px solid #ffd700";
             imgDiv.style.boxShadow = "0 0 10px 3px #ffd700";
         }
         stars.style.marginTop = "10px";
@@ -133,17 +133,17 @@ function tenPull() {
         if (imgSrc.includes("three")) {
             stars.src = "/images/3star.png";
             stars.style.width = "30%";
-            imgDiv.style.border = "2px solid #b4ecb4"
+            imgDiv.style.border = "2px solid #b4ecb4";
             imgDiv.style.boxShadow = "0 0 10px 3px #b4ecb4";
         } else if (imgSrc.includes("four")) {
             stars.src = "/images/4star.png";
             stars.style.width = "40%";
-            imgDiv.style.border = "2px solid #e463f0"
+            imgDiv.style.border = "2px solid #e463f0";
             imgDiv.style.boxShadow = "0 0 10px 3px #e463f0";
         } else if (imgSrc.includes("five")) {
             stars.src = "/images/5star.png";
             stars.style.width = "50%";
-            imgDiv.style.border = "2px solid #ffd700"
+            imgDiv.style.border = "2px solid #ffd700";
             imgDiv.style.boxShadow = "0 0 10px 3px #ffd700";
         }
         stars.style.marginTop = "10px";
