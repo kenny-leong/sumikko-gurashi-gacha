@@ -1,13 +1,27 @@
-# Winter Break Project - Sumikko Gurashi Gacha Game
+# Sumikko Gurashi Gacha
 
-The purpose of this project was to build a game for my girlfriend during my winter break to consolidate what I've learned so far (Javascript, localStorage, CSS tricks, etc). Basically you pull for characters you want and it keeps track of what characters you have and how much it would cost to get the character of your choice since each character has a different probability of being pulled.
+## Overview
+Sumikko Gurashi Gacha is an interactive and engaging character gacha game developed using DOM manipulation techniques in JavaScript. The game allows users to collect different Sumikko Gurashi characters with specific drop rates, while simulating complex algorithms to increase the challenge and excitement for users. Sumikko Gurashi is a popular Japanese character franchise featuring cute, quirky animal characters that are very popular with kids and adults alike.
 
-## General Setup
+## Features
+* Click on a button to gain different Sumikko Gurashi characters with varying drop rates.
+* Uses in-depth knowledge of JavaScript to implement complex algorithms that simulate the probability of obtaining rare Sumikko Gurashi characters, increasing the challenge and excitement for users.
+* Utilizes DOM manipulation techniques in JavaScript to create an interactive and engaging user interface.
 
-Just clone it and run the `index.html` and you should be good(?). You can also visit the domain at `sumikkogurashigacha.com` for the already deployed site if you don't feel like cloning.
+## Technologies Used
+* HTML
+* CSS
+* Javascript
 
-## Walkthrough
+## Getting Started
 
-There's not much to it, just "buy" gems, and pull your favorite character. Below is a screenshot of what the UI `(User Interface)` currently looks like (it's still a work in progress).
+1. Clone the repository to your local machine using git clone https://github.com/kenny-leong/sumikko-gurashi-gacha.git
+2. Open the index.html file in your browser
+3. Start playing!
+
+## Conclusion
+
+Sumikko Gurashi Gacha is a fun and addictive game that combines a popular Japanese character franchise with cutting-edge web technologies. The use of DOM manipulation techniques in JavaScript makes for an interactive and engaging user interface, while the implementation of complex algorithms adds an extra layer of challenge and excitement for users. This project demonstrates my proficiency in JavaScript and my ability to create engaging and interactive web applications.
+
 
 ![screenshot](/images/gacha-simulator.png "Screenshot")
