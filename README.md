@@ -15,7 +15,7 @@ Sumikko Gurashi Gacha is an interactive and engaging character gacha game develo
 
 ## Getting Started
 
-1. Clone the repository to your local machine using git clone https://github.com/kenny-leong/sumikko-gurashi-gacha.git
+1. Clone the repository to your local machine
 2. Open the index.html file in your browser
 3. Start playing!
 
