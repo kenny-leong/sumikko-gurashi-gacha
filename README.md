@@ -19,7 +19,7 @@ Sumikko Gurashi Gacha is an interactive and engaging character gacha game develo
 2. Open the index.html file in your browser
 3. Start playing!
 
-## Conclusion
+## Final Thoughts
 
 Sumikko Gurashi Gacha is a fun and addictive game that combines a popular Japanese character franchise with cutting-edge web technologies. The use of DOM manipulation techniques in JavaScript makes for an interactive and engaging user interface, while the implementation of complex algorithms adds an extra layer of challenge and excitement for users. This project demonstrates my proficiency in JavaScript and my ability to create engaging and interactive web applications.
 
