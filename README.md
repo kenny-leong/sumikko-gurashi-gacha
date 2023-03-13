@@ -13,6 +13,8 @@ Sumikko Gurashi Gacha is an interactive and engaging character gacha game develo
 
 ## x10 Pull
 * Pull ten characters from the gacha
+![ten-pull](https://user-images.githubusercontent.com/47682357/224615949-9672d14e-dad8-4522-bc57-ec5005ee9057.gif)
+
 
 ## Technologies Used
 * HTML
