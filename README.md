@@ -7,9 +7,11 @@ Sumikko Gurashi Gacha is an interactive and engaging character gacha game develo
 * Click on a button to gain different Sumikko Gurashi characters with varying drop rates.
 * Uses in-depth knowledge of JavaScript to implement complex algorithms that simulate the probability of obtaining rare Sumikko Gurashi characters, increasing the challenge and excitement for users.
 * Utilizes DOM manipulation techniques in JavaScript to create an interactive and engaging user interface.
+* Ranking is determined by the amount of stars (Green is Common, Purple is Epic, and Orange is Legendary)
 
 ## One Pull
 * Pull one character from the gacha
+![one-pull](https://user-images.githubusercontent.com/47682357/224616229-8562e7d3-b85a-4b42-b0bb-487f784849de.gif)
 
 ## x10 Pull
 * Pull ten characters from the gacha
