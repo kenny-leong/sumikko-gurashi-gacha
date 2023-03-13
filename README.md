@@ -25,6 +25,7 @@ Sumikko Gurashi Gacha is an interactive and engaging character gacha game develo
 * CSS
 * JavaScript
 * Figma
+* Flexbox
 
 ## Getting Started
 
