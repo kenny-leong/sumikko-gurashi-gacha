@@ -8,6 +8,12 @@ Sumikko Gurashi Gacha is an interactive and engaging character gacha game develo
 * Uses in-depth knowledge of JavaScript to implement complex algorithms that simulate the probability of obtaining rare Sumikko Gurashi characters, increasing the challenge and excitement for users.
 * Utilizes DOM manipulation techniques in JavaScript to create an interactive and engaging user interface.
 
+## One Pull
+* Pull one character from the gacha
+
+## x10 Pull
+* Pull ten characters from the gacha
+
 ## Technologies Used
 * HTML
 * CSS
